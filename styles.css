@@ -203,3 +203,22 @@ hr {
     font-size: 64px;
     font-weight: bold;
 }
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product h1{
+    font-family: serif;
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 74px;
+    margin-bottom: 90px;
+}
+.container-product{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 200px;
+}
