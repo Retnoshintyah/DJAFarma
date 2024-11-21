@@ -126,12 +126,14 @@ h2 {
 .about p, .innovation p, .mission p, .team p, .social-responsibility p, .mengapa-memilih p{
     text-align: justify;
     font-size: 40px;
+    font-family: Livvic;
 }
 
 
 .about h2, .innovation h2, .mission h2, .team h2, .social-responsibility h2, .mengapa-memilih h2{
     font-size: 50px;
     margin-bottom: 5px;
+
 }
 
 /* Footer Styling */
