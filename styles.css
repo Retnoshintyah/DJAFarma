@@ -193,10 +193,17 @@ hr {
 }
 
 .alamat{
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 262px;
+}
+
+.alamat img{
+    width: 100%;
+    height: 100%;
 }
 
 .alamat h1{
@@ -208,6 +215,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 200px;
 }
 
 .product h1{
@@ -217,8 +225,78 @@ hr {
     margin-top: 74px;
     margin-bottom: 90px;
 }
-.container-product{
+
+
+.container-product {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 200px;
+    grid-template-columns: repeat(2, 1fr); /* Default: 2 columns */
+    gap: 150px; /* Default spacing */
+}
+
+@media (max-width: 1366px){
+    .container-product {
+        grid-template-columns: repeat(2, 1fr); /* Keep 2 columns */
+        gap: 60px; /* Slightly reduce spacing */
+    }
+}
+
+@media (max-width: 1024px) { /* For tablets or small laptops */
+    .container-product {
+        grid-template-columns: repeat(2, 1fr); /* Keep 2 columns */
+        gap: 50px; /* Slightly reduce spacing */
+    }
+}
+
+@media (max-width: 768px) { /* For mobile devices (portrait orientation) */
+    .container-product {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 20px; /* Minimal spacing */
+    }
+
+    .about p, .innovation p, .mission p, .team p, .social-responsibility p, .mengapa-memilih p{
+        text-align: justify;
+        font-size: 20px;
+    }
+    
+    
+    .about h2, .innovation h2, .mission h2, .team h2, .social-responsibility h2, .mengapa-memilih h2{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-right-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        max-width: 500px;
+        margin-right: 50px;
+        margin: 20px;
+        margin-top: 35px;
+    }
+
+    .nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        margin-right: 14px;
+    }
+
+    .product h1{
+        font-family: serif;
+        font-size: 34px;
+        font-weight: bold;
+        margin-top: 74px;
+        margin-bottom: 90px;
+    }
+
+    .alamat h1{
+        font-size: 44px;
+    }
 }
